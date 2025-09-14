@@ -20,17 +20,82 @@ To replicate our analysis, install the required dependencies and rerun the noteb
 
 ## 🔍 Key Insights & Findings
 
-Our analysis of the OmniMart dataset led to the following key insights:
 
-Revenue Concentration
-The top 5% of customers contribute nearly 40% of total revenue, showing high-value customer clusters.
+📊 Executive Summary
 
-Category Dominance
-Electronics and Clothing together drive over 50% of sales, indicating strong cross-selling potential.
+Typical transaction: ~5 items, median item price ≈ ₹255
 
-Customer Satisfaction & Operations
-Average customer satisfaction rating is 3.4/5.0, while standard shipping shows the highest cancellation rate, pointing to logistics challenges.
+Median basket value: ≈ ₹1,041, but a small % of orders reach ≈ ₹4,999 → high-value outliers exist
 
+Customer base: Average age ≈ 35.7 years
+
+Customer ratings: Average rating ≈ 3.18 (room for improvement)
+
+Temporal patterns: Sales fluctuate significantly by month/quarter
+
+🧾 Key Findings (Evidence from Analysis)
+
+Basket size & price: Median Total_Purchases = 5; Median Amount = 255
+
+Revenue: Mean Total_Amount = 1,367; Total Revenue ≈ 407M; Max ≈ 4,999
+
+Ratings: Mean = 3.18; very weak correlation with spend
+
+Age: Average = 35.7; little correlation with purchases
+
+Outliers: High-value transactions exist (IQR outliers in Total_Amount)
+
+Top categories/brands: A small group contributes most of revenue (pie/donut/bar plots confirm concentration)
+
+✅ Actionable Recommendations
+
+Increase Average Order Value (AOV)
+
+Bundle offers (e.g., buy 4 get 1 discounted)
+
+Free shipping thresholds slightly above median basket value (~1,400–1,500)
+
+Evidence: Basket median = 5 items, item median price = 255
+
+Nurture High-Value Customers
+
+Identify outlier transactions (orders > 4,000)
+
+Build VIP segment with exclusive offers & loyalty programs
+
+Evidence: Max Total_Amount ≈ 4,999; right-skewed revenue distribution
+
+Improve Ratings & Customer Experience
+
+Focus on categories/brands with lowest ratings
+
+Fix product pages, delivery messaging, after-sales support
+
+Evidence: Average rating = 3.18; variation across categories/brands in boxplots
+
+Demographic Targeting
+
+Main age group = 25–40 years → tailor offers & ads for this segment
+
+Track behavior differences in <25 and 40+ age groups
+
+Evidence: Mean age ≈ 35.7; crosstab Category × Age_Group confirms segmentation
+
+Merchandising Focus
+
+Promote top 10 categories/brands via homepage highlights & cross-sell
+
+Reassess low-performing categories → promos or consolidation
+
+Evidence: Revenue distribution plots (pie/donut)
+
+Time-Based Promotions
+
+Use monthly/quarterly sales trends to optimize campaigns & inventory
+
+Push marketing in slow months, maximize during peaks
+
+Evidence: Monthly and quarterly revenue plots
 ➡️ For a more detailed breakdown, please refer to the full analysis.ipynb notebook and the presentation.pdf file.
 
 ## 📁 Repository Structure
