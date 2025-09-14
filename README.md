@@ -81,7 +81,7 @@ Our mission was to analyze the provided dataset to uncover **actionable insights
 - `README.md` → This documentation file  
 - `retail_data.zip` → Dataset used for the challenge  
 - `analysis.ipynb` → Jupyter/Colab notebook with all analysis  
-- `presentation.pdf` → Final presentation slides summarizing insights & recommendations  
+- `Data Minds_.pdf` → Final presentation slides summarizing insights & recommendations  
 
 ---
 
